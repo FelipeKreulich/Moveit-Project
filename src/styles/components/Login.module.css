@@ -1,0 +1,117 @@
+/*.container {
+    background: #5965E0;
+    height: 100vh;
+    display: flex;
+}
+
+.conteudo {
+    margin-left: 250px;
+    margin-top: 200px;
+}
+
+.inputLogin {
+    padding: 25px;
+    width: 340px;
+    color: white;
+    background-image: linear-gradient(to left, rgba(73, 82, 184, 0.87), rgb(73, 82, 184));
+    border: 0;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.btnLogin {
+    padding: 25px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background: #4953B8;
+}
+
+.btnLogin:hover {
+    background: #4CD62B;
+}
+
+.iconbtn {
+    color: white;
+}
+
+.inputLogin::placeholder {
+    color: #B2B9FF;
+}
+
+.messageAccount {
+    color: #B2B9FF;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.welcomeMessage {
+    margin-bottom: 50px;
+    margin-top: 150px;
+    color: white;
+    font-size: 50px;
+}
+
+.logoMoveit {
+    width: 550px;
+}
+
+.logoInvisible {
+    width: 960px;
+    margin-top: 100px;
+    margin-left: 10px;
+}*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background-color: #5965E0;
+    height: 100vh;
+}
+
+.logoMoveit {
+    margin-bottom: 250px;
+    width: 600px;
+}
+
+.welcomeMessage {
+    margin-bottom: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+.messageAccount {
+    color: #B2B9FF;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.inputLogin {
+    padding: 25px;
+    width: 340px;
+    color: white;
+    background-image: linear-gradient(to left, rgba(73, 82, 184, 0.884), rgba(73, 82, 184, 0.966));
+    border: 0;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.inputLogin::placeholder {
+    color: #B2B9FF;
+}
+
+.btnLogin {
+    padding: 25px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background: #4953B8;
+}
+
+.btnLogin:hover {
+    background: #4CD62B;
+}
+
+.logoMoveit {
+    margin-right: 200px;
+}
