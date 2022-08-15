@@ -23,13 +23,12 @@ export function Login() {
             });
     };
 
-    return (
         <div className={styles.container}>
 
             <div className={styles.modal__login}>
                 <img src="/icons/moveitlogo.svg" alt="Moveit" />
 
-                <h1>Bem Vindo<font color="#4CD62B">(a)</font></h1>
+                <h1>Bem Vindo(a)</h1>
 
                 <div className={styles.message}>
                     <FiGithub className={styles.icon}/>
