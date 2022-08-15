@@ -1,117 +1,77 @@
-/*.container {
-    background: #5965E0;
-    height: 100vh;
-    display: flex;
-}
-
-.conteudo {
-    margin-left: 250px;
-    margin-top: 200px;
-}
-
-.inputLogin {
-    padding: 25px;
-    width: 340px;
-    color: white;
-    background-image: linear-gradient(to left, rgba(73, 82, 184, 0.87), rgb(73, 82, 184));
-    border: 0;
-    margin-top: 50px;
-    border-radius: 5px;
-}
-
-.btnLogin {
-    padding: 25px;
-    border: 0;
-    border-radius: 0 5px 5px 0;
-    background: #4953B8;
-}
-
-.btnLogin:hover {
-    background: #4CD62B;
-}
-
-.iconbtn {
-    color: white;
-}
-
-.inputLogin::placeholder {
-    color: #B2B9FF;
-}
-
-.messageAccount {
-    color: #B2B9FF;
-    font-size: 30px;
-    margin-top: 30px;
-}
-
-.welcomeMessage {
-    margin-bottom: 50px;
-    margin-top: 150px;
-    color: white;
-    font-size: 50px;
-}
-
-.logoMoveit {
-    width: 550px;
-}
-
-.logoInvisible {
-    width: 960px;
-    margin-top: 100px;
-    margin-left: 10px;
-}*/
-
 .container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: auto;
-    background-color: #5965E0;
+    justify-content: center;
     height: 100vh;
+    background-image: url('/icons/logoextra.svg');
+    background-color: #5965E0;
 }
 
-.logoMoveit {
-    margin-bottom: 250px;
-    width: 600px;
+.modal__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: auto;
+    height: 80%;
+    padding: 40px;
+    background-color: #434FCB;
 }
 
-.welcomeMessage {
-    margin-bottom: 50px;
-    color: white;
-    font-size: 50px;
+.message {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
 }
 
-.messageAccount {
-    color: #B2B9FF;
-    font-size: 30px;
-    margin-top: 30px;
+.modal__login h1 {
+    margin-top: 4rem;
+    font-size: 34px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
-.inputLogin {
-    padding: 25px;
-    width: 340px;
-    color: white;
-    background-image: linear-gradient(to left, rgba(73, 82, 184, 0.884), rgba(73, 82, 184, 0.966));
-    border: 0;
-    margin-top: 50px;
-    border-radius: 5px;
+.message .icon {
+    width: 28px;
+    height: 28px;
+    color: #FFFFFF;
 }
 
-.inputLogin::placeholder {
-    color: #B2B9FF;
+.message p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
-.btnLogin {
-    padding: 25px;
-    border: 0;
-    border-radius: 0 5px 5px 0;
-    background: #4953B8;
+.form {
+    margin-top: 4rem;
 }
 
-.btnLogin:hover {
-    background: #4CD62B;
+.form input {
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    background-image: linear-gradient(to bottom, #1E277C, #252A5C);
 }
 
-.logoMoveit {
-    margin-right: 200px;
+.form input::placeholder {
+    color: #5965E0;
+    text-align: center;
+}
+
+.form button {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    color: #434FCB;
+    background-color: #5965E0;
+}
+
+.form button:hover {
+    color: #FFFFFF;
+    background-color: #4CD62B;
 }

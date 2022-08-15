@@ -24,32 +24,24 @@ export function Login() {
     };
 
     return (
-        <div
-            className={`${styles.container} animate__animated animate__fadeIn`}
-        >
-            <div>
-                <img className={styles.logoInvisible} src="/icons/logoextra.svg" alt="moveit"/>
-            </div>
+        <div className={styles.container}>
 
-            <div className={styles.conteudo}>
-                <img className={styles.logoMoveit} src="/icons/moveitlogo.svg" alt="Logo Moveit"/>
+            <div className={styles.modal__login}>
+                <img src="/icons/moveitlogo.svg" alt="Moveit" />
 
-                <h1 className={styles.welcomeMessage}>Bem-Vindo(a)</h1>
+                <h1>Bem Vindo<font color="#4CD62B">(a)</font></h1>
 
-                <span className={styles.messageAccount}> <FiGithub className={styles.icongithub}></FiGithub> Faça login com o Github</span>
+                <div className={styles.message}>
+                    <FiGithub className={styles.icon}/>
+                    <p>Faça Login com seu Github</p>
+                </div>
 
-                <form onSubmit={handleLogin}>
-                    <input
-                        className={styles.inputLogin}
-                        type="text"
-                        name="user"
-                        placeholder="Digite seu GitHub"
-                    />
-                    <button className={styles.btnLogin} type="submit">
-                        <FiCornerDownRight className={styles.iconbtn}></FiCornerDownRight>
-                    </button>
+                <form className={styles.form} onSubmit={handleLogin}>
+                    <input type="text" placeholder="Digite seu Github" name="user" />
+                    <button type="submit"><FiCornerDownRight /></button>
                 </form>
             </div>
+
         </div>
     );
 }

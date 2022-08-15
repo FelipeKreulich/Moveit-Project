@@ -58,5 +58,20 @@
         "type": "body",
         "description": "Em pé, gire a cintura o máximo que puder para a esquerda, segure por cinco segundos. Repita para a direita.",
         "amount": 90
+    },
+    {
+        "type": "body",
+        "description": "Faça 10 flexões de braço.",
+        "amount": 80
+    },
+    {
+        "type": "body",
+        "description": "Faça 20 Polichinelos.",
+        "amount": 50
+    },
+    {
+        "type": "body",
+        "description": "Faça 15 agachamentos, levando a perna a frente do tronco e revezando-as em seguida.",
+        "amount": 80
     }
 ]
