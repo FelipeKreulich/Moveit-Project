@@ -29,7 +29,7 @@ export function Login() {
             <div className={styles.modal__login}>
                 <img src="/icons/moveitlogo.svg" alt="Moveit" />
 
-                <h1>Bem Vindo<span style={{color: "#4CD62B"}}>(a)</span></h1>
+                <h1><span style={{color: "#FFFFFF"}}>Bem Vindo</span><span style={{color: "#4CD62B"}}>(a)</span></h1>
 
                 <div className={styles.message}>
                     <FiGithub className={styles.icon}/>
