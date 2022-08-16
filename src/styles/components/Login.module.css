@@ -29,6 +29,7 @@
     margin-top: 4rem;
     font-size: 34px;
     font-weight: bold;
+    cursor: default;
 }
 
 .message .icon {
@@ -41,6 +42,7 @@
     font-size: 24px;
     font-weight: bold;
     color: #FFFFFF;
+    cursor:default;
 }
 
 .form {
@@ -60,7 +62,7 @@
     text-align: center;
 }
 
-.form button {
+.button_login {
     height: 50px;
     width: 50px;
     padding: 10px;
@@ -70,7 +72,90 @@
     background-color: #5965E0;
 }
 
-.form button:hover {
+.button_login:hover {
     color: #FFFFFF;
     background-color: #4CD62B;
+    transition: all 0.5s linear;
+}
+
+.button_singup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 1.2rem;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #5965E0;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+.button_singup:hover {
+    background-color: #4CD62B;
+    color: #1E277C;
+    transition: all 0.5s linear;
+}
+
+.form a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.8rem;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.form a:hover {
+    color: #4CD62B;
+    text-decoration: underline;
+}
+
+.form_singup label input {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #434FCB;
+    color: #FFFFFF;
+}
+
+.form_singup label input::placeholder {
+    color: #FFFFFF;
+}
+
+.form_singup input {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem
+}
+
+.form_singup label {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+.form_singup button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #1E277C;
+    background-color: #FFFFFF;
+    height: 24px;
+}
+
+.form_singup button:hover {
+    background: #4CD62B;
+    transition: all 0.5s linear;
 }

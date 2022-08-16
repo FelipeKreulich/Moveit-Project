@@ -1,9 +1,14 @@
 import axios from "axios";
 import styles from "../styles/components/Login.module.css";
+import { useState } from "react";
+import Modal from '../components/SingupModal';
 
 import { FiCornerDownRight, FiGithub } from "react-icons/fi";
 
 export function Login() {
+
+    const [show, setShow] = useState(false)
+
     const handleLogin = (event) => {
         event.preventDefault();
         axios
@@ -38,8 +43,17 @@ export function Login() {
 
                 <form className={styles.form} onSubmit={handleLogin}>
                     <input type="text" placeholder="Digite seu Github" name="user" />
-                    <button type="submit"><FiCornerDownRight /></button>
+                    <button className={styles.button_login} type="submit"><FiCornerDownRight /></button>
+                    <button className={styles.button_singup} onClick={() => setShow(true)}>CADASTRE-SE</button>
                 </form>
+
+                <Modal onClose={() => setShow(false)} show={show}>
+                        <form className={styles.form_singup}>
+                            <label >Email: <input type="email" placeholder="Digite seu Email" required/></label>
+                            <label>Senha: <input type="password" placeholder="Digite uma Senha" minLength={4} maxLength={8} required/></label>
+                            <button type="submit">Cadastrar</button>
+                        </form>
+                </Modal>
             </div>
 
         </div>
