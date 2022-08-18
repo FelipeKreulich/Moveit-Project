@@ -16,7 +16,6 @@ import { Login } from "../components/Login";
 import { useEffect, useState } from "react";
 
 import styless from "../styles/components/Login.module.css";
-
 interface HomeProps {
     level: number;
     currentExperience: number;
